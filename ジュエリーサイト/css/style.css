@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #2d2d2d;
+    font-family: 'Crimson Text', serif;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+
+
+/*-----------SP------------*/
+@media screen and (max-width: 834px) {
+    
+}
+
+/*-------Mainvisual--------*/
+#mainvisual {
+    width: 90vw;
+    margin: 4% auto 0 auto;
+}
+
+/*------------SP------------*/
+@media screen and (max-width: 767px) {
+    /*----------------Mainvisual--------------*/
+    #mainvisual {
+        width: 100%;
+        margin: 0;
+    }
+    #mainvisual img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    /*----------header------------*/
+
+    #header {
+        width: 100%;
+        padding: 20px 18px;
+    }
+
+    /*--------main------------*/
+    .content {
+        flex-direction: column;
+    }
+    .content .img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content .text {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/*-----------header----------*/
+.site-title {
+    width: 110px;
+    line-height: 1px;
+    margin-right: 50px;
+}
+.site-title a {
+    display: block;
+}
+
+#header {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    margin: 0 auto 30px auto;
+}
+#header ul {
+    display: flex;
+}
+#header li {
+    font-size: 0.875rem;
+    margin-right: 30px;
+}
+#header li:last-child {
+    margin-right: 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+.section-title-en {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/*-------Concept,Work---------*/
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content .img {
+    width: 50%;
+}
+.content .text {
+    width: 50%;
+    padding: 0 7%;
+}

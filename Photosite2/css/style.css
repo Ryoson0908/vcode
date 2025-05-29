@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 0.875rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* サイト全体のコンテンツ幅を設定 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 中のコンテンツ部分の最大幅を設定 */
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* -------ヘッダー------- */
+#header {
+    margin-top: 60px;
+}
+
+#header .site-title {
+    width: 180px;
+    line-height: 1px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.h1 {
+    font-size: 80px;
+}
+
+/*--------メインコンテンツ------- */
+.main {
+    margin: 10px, 30px, 10px, 30px;
+
+}
+#main-visual img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* INDEXのとこ */
+#index {
+    margin: 40px;
+    padding: 40px;
+    background-color: #F5F5F5;
+}
+
+#index .index-inner {
+    border: solid 1px #333;
+    padding: 30px;
+}
+
+/* imageのとこ　*/
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.list li {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.list li img {
+    vertical-align: bottom;
+}
+
+/* Detail のとこ */
+#detail {
+    margin: 60px;
+    padding: 60px;
+    background-color: #F5F5F5;
+}
+
+#detail .detail-inner {
+    display: flex;
+}
+
+#detail .detail-inner dl {
+    width: 35%;
+    border-right: solid 1px #333;
+    padding-right: 40px;
+}
+
+#detail .detail-inner dl dt {
+    font-weight: bold;
+}
+
+#detail .detail-inner dl dd{
+    padding-bottom: 10px;
+}
+
+#detail .detail-inner dl dd:last-child {
+    margin-bottom: 0;
+}
+
+#detail .text {
+    width: 65%;
+    padding-left: 40px;
+}
+
+#detail .text p {
+    margin-bottom: 20px;
+}
+
+#detail .text .link {
+    color: #333;
+}
+
+#detail .text .link:hover {
+    opacity: 0.8;
+}

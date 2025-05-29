@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超すごい！なめこ栽培デラックス</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>超すごい！なめこ栽培デラックス</h1>
+
+    <div class="container">
+        <div id="game-area">
+            </div>
+
+        <div id="info-panel">
+            <h2>情報</h2>
+            <p>スコア: <span id="score">0</span></p>
+            <p>原木レベル: <span id="log-level">1</span> (次のレベルまであと <span id="exp-to-next-level">10</span>)</p>
+            <button id="reset-data-button">データリセット</button>
+
+            <h2>サウンド</h2>
+            <label for="bgm-volume">BGM音量:</label>
+            <input type="range" id="bgm-volume" min="0" max="1" step="0.1" value="0.5">
+            <br>
+            <label for="sfx-volume">効果音音量:</label>
+            <input type="range" id="sfx-volume" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+    <div id="zukan-panel">
+        <h2>なめこ図鑑 (<span id="zukan-collected-count">0</span>/<span id="zukan-total-count">0</span>)</h2>
+        <div id="zukan-list">
+            </div>
+    </div>
+
+    <audio id="harvest-sound" src="sounds/harvest.wav"></audio>
+    <audio id="rare-harvest-sound" src="sounds/rare_harvest.wav"></audio>
+    <audio id="grow-sound" src="sounds/grow.wav"></audio>
+    <audio id="bgm" src="sounds/bgm.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
