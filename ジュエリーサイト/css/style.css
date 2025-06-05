@@ -123,3 +123,23 @@ a {
     width: 50%;
     padding: 0 7%;
 }
+
+/*---------SP----------*/
+@media screen and (max-width: 767px) {
+    /*-----------Concept, Work--------*/
+    #work {
+        flex-direction: column-reverse;
+    }
+}
+
+/*------------Footer----------*/
+#footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    padding: 20px 0;
+}
+
+#footer .logo {
+    width: 110px;
+}
